@@ -25,6 +25,16 @@ public class Player_Move : MonoBehaviour
 
 
 
+    [Header("冲刺参数")]
+    public float dashSpeed = 12f;         // 冲刺速度
+    public float dashDuration = 0.2f;     // 冲刺持续时间
+    public float dashCooldown = 0.5f;      // 冲刺冷却时间
+    public bool canDashInAir = true;      // 是否允许空中冲刺
+    public bool disableDoubleJumpWhenDashing = true; // 冲刺时禁用二段跳
+
+
+    [Header("动画参数")]
+    public Animator animator;
 
     // 私有变量
     private Rigidbody2D rb;
@@ -35,12 +45,15 @@ public class Player_Move : MonoBehaviour
     private float jumpBufferTimer;
     private float coyoteTimer;
 
-    [Header("动画参数")]
-    public Animator animator; 
+    private bool isDashing;           // 是否正在冲刺
+    private float dashCooldownTimer;   // 冲刺冷却计时器
+    private float dashTimer;           // 冲刺持续计时器
+    private Vector2 dashDirection;     // 冲刺方向
 
-    
+
     private readonly int isRunningHash = Animator.StringToHash("IsRunning");
     private readonly int isGroundedHash = Animator.StringToHash("IsGrounded");
+    private readonly int isDashingHash = Animator.StringToHash("IsDashing");
 
     private void Awake()
     {
@@ -63,6 +76,30 @@ public class Player_Move : MonoBehaviour
         // 1. 获取输入
         horizontalInput = Input.GetAxisRaw("Horizontal");
         bool jumpInput = Input.GetButtonDown("Jump");
+        bool dashInput = Input.GetKeyDown(KeyCode.LeftShift);
+
+        if (dashCooldownTimer > 0)
+        {
+            dashCooldownTimer -= Time.deltaTime;
+        }
+
+        if (dashInput && CanDash())
+        {
+            StartDashing();
+        }
+
+        if(isDashing)
+        {
+            dashTimer -= Time.deltaTime;
+            if(dashTimer <= 0)
+            {
+                EndDashing();
+            }
+            
+        }
+
+
+
 
         // 2. 跳跃缓冲：按下跳键时重置计时器
         if (jumpInput)
@@ -106,20 +143,27 @@ public class Player_Move : MonoBehaviour
     {
         bool isRunning = false;
 
-        // 只有接地时，才根据水平输入判断是否跑步
-        if (isGrounded)
+        // 冲刺时优先播放冲刺动画，忽略跑步状态
+        if (isDashing)
         {
-            // 有明显水平输入（避免误触），则视为跑步
-            isRunning = Mathf.Abs(horizontalInput) > 0.15f;
+            animator.SetBool(isDashingHash, true);
+            animator.SetBool(isRunningHash, false);
         }
         else
         {
-            // 空中时，强制不跑步（播放idle）
-            isRunning = false;
+            animator.SetBool(isDashingHash, false); // 非冲刺时关闭冲刺动画
+            // 原有跑步逻辑
+            if (isGrounded)
+            {
+                isRunning = Mathf.Abs(horizontalInput) > 0.15f;
+            }
+            else
+            {
+                isRunning = false;
+            }
+            animator.SetBool(isRunningHash, isRunning);
         }
 
-        // 给Animator设置参数（控制动画切换）
-        animator.SetBool(isRunningHash, isRunning);
         animator.SetBool(isGroundedHash, isGrounded);
     }
 
@@ -127,6 +171,12 @@ public class Player_Move : MonoBehaviour
     {
         // 6. 接地检测（物理帧执行，更稳定）
         CheckGrounded();
+
+        if(isDashing)
+        {
+            rb.velocity = new Vector2(dashDirection.x * dashSpeed, rb.velocity.y);
+            return;
+        }
 
         // 7. 计算目标水平速度（地面/空中差异化）
         float targetXVelocity = CalculateTargetXVelocity();
@@ -138,6 +188,48 @@ public class Player_Move : MonoBehaviour
         // 9. 应用速度（垂直速度保持物理引擎的重力效果）
         rb.velocity = new Vector2(smoothedXVelocity, rb.velocity.y);
     }
+
+    //冲刺
+    private bool CanDash()
+    {
+        bool hasDirection = Mathf.Abs(horizontalInput) > 0.15f || Mathf.Abs(transform.localScale.x) > 0.1f;
+        bool airDashAllowed = canDashInAir || isGrounded;
+
+        return dashCooldownTimer <= 0f && hasDirection && airDashAllowed && !isDashing;
+    }
+
+    private void StartDashing()
+    {
+        isDashing = true;
+        dashTimer = dashDuration;
+        dashCooldownTimer = dashCooldown;
+        // 确定冲刺方向：优先使用输入方向，其次使用当前面朝方向
+        if (Mathf.Abs(horizontalInput) > 0.15f)
+        {
+            dashDirection = new Vector2(Mathf.Sign(horizontalInput), 0f);
+        }
+        else
+        {
+            dashDirection = new Vector2(transform.localScale.x, 0f);
+        }
+        // 冲刺时禁用二段跳（可选）
+        if (disableDoubleJumpWhenDashing)
+        {
+            currentJumpCount = maxJumpCount;
+        }
+        rb.gravityScale = 0f; // 冲刺时关闭重力影响
+    }
+
+
+    private void EndDashing()
+    {
+        isDashing = false;
+        rb.gravityScale = 3.5f; // 恢复重力影响
+    }
+
+
+
+
 
     // 接地检测：用圆形重叠检测，精准判断是否站在地面
     private void CheckGrounded()
