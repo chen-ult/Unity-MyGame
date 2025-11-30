@@ -1,0 +1,727 @@
+fileFormatVersion: 2
+guid: 28393dd55e49f0e47971170728473128
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5875527054735182794
+    second: tufei_0
+  - first:
+      213: 541115129345659089
+    second: tufei_1
+  - first:
+      213: -6477417942991014754
+    second: tufei_2
+  - first:
+      213: -111046279296400456
+    second: tufei_3
+  - first:
+      213: -5556885023952057933
+    second: tufei_4
+  - first:
+      213: 8834876029228401414
+    second: tufei_5
+  - first:
+      213: -6306681623710825500
+    second: tufei_6
+  - first:
+      213: 6561616544257493035
+    second: tufei_7
+  - first:
+      213: 1777331145969896090
+    second: tufei_8
+  - first:
+      213: 1328833898682961114
+    second: tufei_9
+  - first:
+      213: -7552423070330479139
+    second: tufei_10
+  - first:
+      213: 1399249539739634728
+    second: tufei_11
+  - first:
+      213: 3248398374513562853
+    second: tufei_12
+  - first:
+      213: 8465255088629073285
+    second: tufei_13
+  - first:
+      213: 6468570140108570574
+    second: tufei_14
+  - first:
+      213: -5210879559283216545
+    second: tufei_15
+  - first:
+      213: 4615687912007997331
+    second: tufei_16
+  - first:
+      213: 237145973517763226
+    second: tufei_17
+  - first:
+      213: 279482803133929758
+    second: tufei_18
+  - first:
+      213: 4139697792274208432
+    second: tufei_19
+  - first:
+      213: -8018775306044639910
+    second: tufei_20
+  - first:
+      213: 5110127959784662271
+    second: tufei_21
+  - first:
+      213: 1374823083152481158
+    second: tufei_22
+  - first:
+      213: 3887950082234979575
+    second: tufei_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tufei_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 239
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb00b5f9b01a8150800000000000000
+      internalID: 5875527054735182794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 239
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0dc3bd75d628700800000000000000
+      internalID: 541115129345659089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_2
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 239
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94774e13b69b16a0800000000000000
+      internalID: -6477417942991014754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 239
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3c8e05ffb757ef0800000000000000
+      internalID: -111046279296400456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 191
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b946a9238af1e2b0800000000000000
+      internalID: -5556885023952057933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 191
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603c5cc70f8cb9a70800000000000000
+      internalID: 8834876029228401414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 191
+        width: 23
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e38b3b3a7a2a78a0800000000000000
+      internalID: -6306681623710825500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_7
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 191
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b284bc86b7b8f0b50800000000000000
+      internalID: 6561616544257493035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 143
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a06c3b2495aa810800000000000000
+      internalID: 1777331145969896090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 95
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcce70f367f07210800000000000000
+      internalID: 1328833898682961114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 143
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd9c736b37603790800000000000000
+      internalID: -7552423070330479139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 95
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c4f48fa022b6310800000000000000
+      internalID: 1399249539739634728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_12
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 143
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e456d16c11a41d20800000000000000
+      internalID: 3248398374513562853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_13
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 143
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585cdcaf6a0aa7570800000000000000
+      internalID: 8465255088629073285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_14
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 95
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfbedd354af4c950800000000000000
+      internalID: 6468570140108570574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f649536ac3fa7b0800000000000000
+      internalID: -5210879559283216545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_16
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 47
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3971d4573b73e0040800000000000000
+      internalID: 4615687912007997331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_17
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 47
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92c077a1038a4300800000000000000
+      internalID: 237145973517763226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_18
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 47
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19d0a1f02ce0e300800000000000000
+      internalID: 279482803133929758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_19
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 47
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b619f18539237930800000000000000
+      internalID: 4139697792274208432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_20
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55f88d285697b090800000000000000
+      internalID: -8018775306044639910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_21
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4a1c70e42dae640800000000000000
+      internalID: 5110127959784662271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_22
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b9f4c5f4a541310800000000000000
+      internalID: 1374823083152481158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tufei_23
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 0
+        width: 49
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f411142006c4f530800000000000000
+      internalID: 3887950082234979575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      tufei_0: 5875527054735182794
+      tufei_1: 541115129345659089
+      tufei_10: -7552423070330479139
+      tufei_11: 1399249539739634728
+      tufei_12: 3248398374513562853
+      tufei_13: 8465255088629073285
+      tufei_14: 6468570140108570574
+      tufei_15: -5210879559283216545
+      tufei_16: 4615687912007997331
+      tufei_17: 237145973517763226
+      tufei_18: 279482803133929758
+      tufei_19: 4139697792274208432
+      tufei_2: -6477417942991014754
+      tufei_20: -8018775306044639910
+      tufei_21: 5110127959784662271
+      tufei_22: 1374823083152481158
+      tufei_23: 3887950082234979575
+      tufei_3: -111046279296400456
+      tufei_4: -5556885023952057933
+      tufei_5: 8834876029228401414
+      tufei_6: -6306681623710825500
+      tufei_7: 6561616544257493035
+      tufei_8: 1777331145969896090
+      tufei_9: 1328833898682961114
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
